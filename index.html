@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#0F172A" />
+    <title>Erişilebilir Sesli Navigasyon - Görme Güçlüğü İçin GPS Navigasyon</title>
+    <meta name="description" content="Görme güçlüğü yaşayan kullanıcılar için sade, yüksek kontrastlı, Türkçe sesli yönlendirmeli ve GPS destekli navigasyon sistemi." />
+    <link rel="icon" type="image/svg+xml" href="./dist/icons/app-icon.svg" />
+    <link rel="manifest" href="./dist/manifest.json" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Navigasyon" />
+    <link rel="apple-touch-icon" href="./dist/icons/app-icon.png" />
+    <script type="module" crossorigin src="./dist/assets/app-BduCRzkr.js"></script>
+    <link rel="stylesheet" crossorigin href="./dist/assets/app-CyL4t9Dx.css">
+  </head>
+  <body>
+    <div id="app" data-theme="day">
+      <!-- Tam Ekran Leaflet Harita Katmanı -->
+      <main id="map-container" role="region" aria-label="Navigasyon Haritası"></main>
+
+      <!-- Üst Arayüz Katmanı (Arama Çubuğu & Manevra Kartı) -->
+      <header class="ui-overlay top-ui-layer">
+        <div id="top-maneuver-container" class="hidden"></div>
+        <div id="search-bar-container"></div>
+      </header>
+
+      <!-- Harita Üzeri Hızlı Kontroller (Ses, Tema, Araca Dön, Yakınlaştırma) -->
+      <aside id="floating-controls-container" class="ui-overlay"></aside>
+
+      <!-- Alt Arayüz Katmanı (Seyahat Metrikleri & Başlat/Durdur Butonları) -->
+      <footer class="ui-overlay bottom-ui-layer">
+        <div id="bottom-panel-container"></div>
+      </footer>
+
+      <!-- Ekran Okuyucular İçin Canlı Bildirim Alanı -->
+      <div id="sr-announcer" class="sr-only" aria-live="assertive" aria-atomic="true"></div>
+    </div>
+
+  </body>
+</html>
+
